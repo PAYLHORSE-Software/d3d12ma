@@ -2,7 +2,7 @@
 // | D3D12MA |
 //  ---------
 
-#load "bindings.jai";
+#load "d3d12ma_bindings.jai";
 
 // ---- DLL COPY TO OUTPUT -----------------
 // This runs when compiling the final target

@@ -39,7 +39,7 @@ generate_bindings :: (args: [] string) -> bool {
         footer = FOOTER;
     }
 
-    return generate_bindings(opts, OUTPUT_PATH);
+    return generate_bindings(opts, "d3d12ma_bindings");
 }
 
 // lib_visitor :: (decl: *Declaration, parent_decl: *Declaration) -> Declaration_Visit_Result {}
@@ -50,8 +50,6 @@ generate_bindings :: (args: [] string) -> bool {
 #import "Bindings_Generator";
 #import "Compiler";
 #import "File";
-
-OUTPUT_PATH :: "bindings.jai";
 
 // DECLARATIONS_TO_OMIT :: string.[
 // ];
