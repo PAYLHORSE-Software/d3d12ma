@@ -7,7 +7,7 @@
 // | D3D12MA BINDINGS |
 //  ------------------
 
-// NOTE: HAND-EDITED at @EDITED
+// NOTE: hand-edited at @EDITED
 
 _ALLOW_COMPILER_AND_STL_VERSION_MISMATCH :: 1;
 D3D12MA_DXGI_1_4 :: 1;
@@ -23,7 +23,7 @@ D3D12MA :: struct {
 
 	// @EDITED
         // m_RefCount: std.atomic(u32) = 1;
-        m_RefCount : u32 = 1;
+        m_RefCount: u32 = 1;
         #place iunknown; iunknownimpl_vtable: *IUnknownImpl_VTable;
 
         // Virtual functions:

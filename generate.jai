@@ -28,7 +28,7 @@ generate_bindings :: (args: [] string) -> bool {
     {
         using opts;
 
-        array_add(*libnames, "D3D12MAd.lib");
+        array_add(*libnames, "D3D12MAd.dll");
 
         array_add(*source_files, "D3D12MemAlloc.h");
         array_add(*extra_clang_arguments, "-x", "c++", "-DWIN32_LEAN_AND_MEAN", "-D_ALLOW_COMPILER_AND_STL_VERSION_MISMATCH");
@@ -39,7 +39,7 @@ generate_bindings :: (args: [] string) -> bool {
         footer = FOOTER;
     }
 
-    return generate_bindings(opts, "d3d12ma_bindings");
+    return generate_bindings(opts, "dma_bindings.jai");
 }
 
 // lib_visitor :: (decl: *Declaration, parent_decl: *Declaration) -> Declaration_Visit_Result {}
